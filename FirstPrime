@@ -1,0 +1,23 @@
+public class FirstPrime{
+
+public static boolean isPrime(int num){
+   if(num<=1) return false;
+    for(int i=2;i<=Math.Sqrt(num);i++){
+        if(num%i==0) return false;
+  }
+
+   return true;
+
+}
+public static void main(String args[]){
+    int arr[]={4,6,8,9,11,13};
+for(int num:arr){
+   if(isPrime(num)){
+     println("First Prime number found"+num);
+     break;
+  }
+}
+
+}
+
+}
